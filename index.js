@@ -6,28 +6,12 @@ const HOSTED_URLS = {
       'model_js/metadata.json'
 };
 
-const examples = {
-  'example1':
-      'The real evils , indeed , of Emma s situation were the power of having rather too much her own way , and a disposition to think a little too well of herself ; these were the disadvantages which threatened alloy to her many enjoyments .',
-  'example2':
-      'But his doom Reserved him to more wrath ; for now the thought Both of lost happiness and lasting pain Torments him : round he throws his baleful eyes , That witnessed huge affliction and dismay , Mixed with obdurate pride and steadfast hate .',
-  'example3':
-      'Long liue the King',    
-  'example4':
-      'As I ponderd in silence , Returning upon my poems , considering , lingering long , A Phantom arose before me with distrustful aspect , Terrible in beauty , age , and power , The genius of poets of old lands , As to me directing like flame its eyes , With finger pointing to many immortal songs , And menacing voice , What singest thou ?'
-};
 
 function status(statusText) {
   console.log(statusText);
   document.getElementById('status').textContent = statusText;
 }
 
-function showMetadata(metadataJSON) {
-  document.getElementById('vocabularySize').textContent =
-      metadataJSON['vocabulary_size'];
-  document.getElementById('maxLen').textContent =
-      metadataJSON['max_len'];
-}
 
 function settextField(text, predict) {
   const textField = document.getElementById('text-entry');
