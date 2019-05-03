@@ -12,21 +12,15 @@
   <h1>
     Plot color
   </h1>
-    <hr>
-      <div>
-    <span id="status">Input text</span>
+  <hr>
+  <div class="create-model">
+    <button id="load-model" style="display:none">Plot</button>
   </div>
-    
+<hr>
   <div>
     <textarea id="text-entry"></textarea>
   </div>
-  
   <hr>
-  <div class="create-model">
-    <button id="plot" style="display:none">Load model</button>
-  </div>
-<hr><body>
-
 <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
 </canvas>
 <script>
@@ -35,8 +29,6 @@ var ctx = c.getContext("2d");
 ctx.fillStyle = "#FF0000";
 ctx.fillRect(20, 20, 150, 100);
 </script>
-</body>
-
   <div>
     <span id="status">Standing by.</span>
   </div>
