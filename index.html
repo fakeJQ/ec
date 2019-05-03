@@ -10,13 +10,22 @@
     }
   </style>
   <h1>
-    Title
+    Plot color
   </h1>
     <hr>
+      <div>
+    <span id="status">Input text</span>
+  </div>
+    
   <div>
     <textarea id="text-entry"></textarea>
   </div>
-  <hr><body>
+  
+  <hr>
+  <div class="create-model">
+    <button id="plot" style="display:none">Load model</button>
+  </div>
+<hr><body>
 
 <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
 </canvas>
@@ -27,13 +36,6 @@ ctx.fillStyle = "#FF0000";
 ctx.fillRect(20, 20, 150, 100);
 </script>
 </body>
-  <hr>
-  <div class="create-model">
-    <button id="load-model" style="display:none">Load model</button>
-  </div>
-  <div>
-    
-  </div>
 
   <div>
     <span id="status">Standing by.</span>
